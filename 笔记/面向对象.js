@@ -158,4 +158,5 @@ window.$ = function (selector) {
 
 
 // 为何使用面向对象?
+// 数据结构化
 
