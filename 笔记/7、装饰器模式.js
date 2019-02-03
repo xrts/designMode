@@ -123,3 +123,20 @@ function log(target, name, descriptor) {
 const math = new Math();
 const result = math.add(2, 4); // 执行 add 时,会自动打印日志, 因为有 @log 装饰器
 console.log('result',result);
+
+// 第三方装饰器插件
+// core-decorators
+// 首先安装 npm i core-decorators --save
+// 开始编码
+import { readonly } from 'core-decorators';
+
+class Person {
+    @readonly
+    name() {
+        return 'zhang'
+    }
+}
+
+let p = new Person();
+alert(p.name());
+// p.name = function({}) // 此处会报错

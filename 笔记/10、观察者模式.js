@@ -41,7 +41,7 @@ class Observer {
 let s = new Subject();
 let o1 = new Observer('o1',s);
 let o2 = new Observer('o2',s);
-let o3 = new Observer('o3',s);
+let o2 = new Observer('o3',s);
 
 s.setState(1);
 s.setState(2);
